@@ -1,0 +1,129 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.justjava.MainActivity">
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. What bird is most associated with the USA?"
+            android:padding="8dp"
+            />
+
+        <EditText
+            android:id="@+id/birdName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            />
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Which of the following are names of USA cities?"
+            android:padding="8dp"
+            />
+        <CheckBox
+            android:id="@+id/lexington_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Lexington"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/salem_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Salem"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/tokyo_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Tokyo"
+            android:textSize="16dp" />
+
+        <CheckBox
+            android:id="@+id/sydney_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Sydney"
+            android:textSize="16dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/q3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. How many stars are on the USA flag?"
+            android:padding="8dp" />
+
+        <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <RadioButton android:id="@+id/state_number_52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="52"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/state_number_53"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="53"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/state_number_51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="51"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/state_number_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What year was the US constitution ratified"
+            android:padding="8dp"
+            />
+
+        <EditText
+            android:id="@+id/ratifiedDate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            />
+
+        <Button android:text="Submit"
+            android:id="@+id/Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:onClick="submitQuiz">
+        </Button>
+
+
+    </LinearLayout>
+</ScrollView>
