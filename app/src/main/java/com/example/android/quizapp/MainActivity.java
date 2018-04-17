@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
     }
-
+    // tallies up the score of the quiz
     private void checkScore(boolean one, boolean two, boolean four){
         double score = 0;
         if (one){
